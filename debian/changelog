@@ -1,5 +1,76 @@
-template-repository (1.0-1) unstable; urgency=medium
+python-zstandard (0.21.0-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Boyuan Yang <byang@debian.org>  Sun, 25 Jun 2023 19:19:53 -0400
+
+python-zstandard (0.21.0-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+    + Requires libzstd 1.5.5.
+  * debian/control: Require libzstd1 (>= 1.5.5~) (<< 1.5.6~).
+  * debian/patches: Refresh patches.
+
+ -- Boyuan Yang <byang@debian.org>  Sat, 24 Jun 2023 16:55:30 -0400
+
+python-zstandard (0.20.0-3) unstable; urgency=high
+
+  * debian/control: Also add dependency on libzstd1 (<< 1.5.5~).
+    (Closes: #1032031)
+
+ -- Boyuan Yang <byang@debian.org>  Mon, 27 Feb 2023 11:43:22 -0500
+
+python-zstandard (0.20.0-2) unstable; urgency=high
+
+  * debian/control: Explicitly depends on libzstd1 (>= 1.5.4~)
+    to circumvent autopkgtest errors.
+
+ -- Boyuan Yang <byang@debian.org>  Tue, 21 Feb 2023 16:15:42 -0500
+
+python-zstandard (0.20.0-1) unstable; urgency=high
+
+  * New upstream release.
+    + Fix compatibility with libzstd 1.5.4. (Closes: #1031293)
+  * debian/control: Explicitly require libzstd-dev (>= 1.5.4~).
+
+ -- Boyuan Yang <byang@debian.org>  Mon, 20 Feb 2023 17:29:29 -0500
+
+python-zstandard (0.19.0-3) unstable; urgency=medium
+
+  * Team upload.
+  * d/control: depend on python3-exceptiongroup.
+    This allows us to restore support for python3.10 a little longer,
+    and also smoothens transition to testing with existing reverse
+    dependencies.
+    Thanks to s3v <c0llapsed@yahoo.it>
+  * d/control: declare compliance to standards version 4.6.2.
+  * d/control: declare rules do not require root.
+
+ -- Étienne Mollier <emollier@debian.org>  Wed, 25 Jan 2023 20:18:20 +0100
+
+python-zstandard (0.19.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * d/control: build depends only on python3-dev. (Closes: #1028837)
+  * d/control: activate autodep8 python tests.
+
+ -- Étienne Mollier <emollier@debian.org>  Sat, 21 Jan 2023 18:36:31 +0100
+
+python-zstandard (0.19.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Boyuan Yang <byang@debian.org>  Tue, 01 Nov 2022 13:48:07 -0400
+
+python-zstandard (0.18.0-2) unstable; urgency=medium
+
+  * Source-only upload.
+
+ -- Boyuan Yang <byang@debian.org>  Fri, 08 Jul 2022 12:00:28 -0400
+
+python-zstandard (0.18.0-1) unstable; urgency=medium
+
+  * Initial release.
+  * d/copyright: Update information.
+
+ -- Boyuan Yang <byang@debian.org>  Wed, 06 Jul 2022 17:59:09 -0400
