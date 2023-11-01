@@ -1,0 +1,21 @@
+From: Boyuan Yang <byang@debian.org>
+Date: Sun, 26 Jun 2022 20:43:37 -0400
+Subject: Use system zstd by default
+
+---
+ setup.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/setup.py b/setup.py
+index d28da98..ba1ac04 100755
+--- a/setup.py
++++ b/setup.py
+@@ -44,7 +44,7 @@ except ImportError:
+ import setup_zstd
+ 
+ SUPPORT_LEGACY = False
+-SYSTEM_ZSTD = False
++SYSTEM_ZSTD = True
+ WARNINGS_AS_ERRORS = False
+ C_BACKEND = True
+ CFFI_BACKEND = True
