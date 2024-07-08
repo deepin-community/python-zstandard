@@ -1,3 +1,9 @@
+python-zstandard (0.21.0-1deepin1) unstable; urgency=medium
+
+  * No source change upload against python 3.12.
+
+ -- Tianyu Chen <sweetyfish@deepin.org>  Mon, 08 Jul 2024 09:56:37 +0200
+
 python-zstandard (0.21.0-1) unstable; urgency=medium
 
   * New upstream.
