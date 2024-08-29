@@ -19,7 +19,7 @@ index dccfc27..fb8056c 100644
 +++ b/tests/test_module_attributes.py
 @@ -9,25 +9,6 @@ class TestModuleAttributes(unittest.TestCase):
  
-         self.assertEqual(zstd.__version__, "0.21.0")
+         self.assertEqual(zstd.__version__, "0.23.0")
  
 -    def test_features(self):
 -        self.assertIsInstance(zstd.backend_features, set)
