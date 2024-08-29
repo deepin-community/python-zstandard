@@ -6,15 +6,15 @@ Uploaders:
  Boyuan Yang <byang@debian.org>,
 Build-Depends:
  debhelper-compat (= 13),
- dh-python,
- libzstd-dev (>= 1.5.5~),
+ dh-sequence-python3,
+ libzstd-dev (>= 1.5.6~),
  python3-all-dev,
- python3-cffi,
+ python3-cffi (>= 1.16.0~),
  python3-setuptools,
  python3-exceptiongroup <!nocheck>,
  python3-hypothesis <!nocheck>,
  python3-sphinx <!nodoc>,
-Standards-Version: 4.6.2
+Standards-Version: 4.7.0
 Testsuite: autopkgtest-pkg-python
 Homepage: https://github.com/indygreg/python-zstandard
 Rules-Requires-Root: no
@@ -28,8 +28,8 @@ Depends:
  ${python3:Depends},
  ${shlibs:Depends},
 # Temporarily force libzstd1 version requirement
- libzstd1 (>= 1.5.5~),
- libzstd1 (<< 1.5.6~),
+ libzstd1 (>= 1.5.6~),
+ libzstd1 (<< 1.5.7~),
 Suggests:
  python-zstandard-doc,
 Description: Python bindings for interfacing with Zstandard library

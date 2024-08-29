@@ -15,7 +15,7 @@ export DEB_LDFLAGS_MAINT_APPEND =
 export ZSTD_EXTRA_COMPILER_ARGS = -I/usr/include
 
 %:
-	dh $@ --with python3 --buildsystem=pybuild
+	dh $@ --buildsystem=pybuild
 
 execute_after_dh_clean:
 	rm -f build/zstandard/_cffi.c
